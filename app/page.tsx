@@ -22,7 +22,7 @@ type TranslationResult = {
 };
 
 // 코드에 직접 입력한 OpenAI API Key 사용
-let OPENAI_API_KEY = "";
+const OPENAI_API_KEY = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
 export default function Home() {
   const [input, setInput] = useState("");
